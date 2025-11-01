@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    /* display: inline-block; */
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    padding: 16px 42px;
+    border: 9px double blue;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+.box:nth-child(3n) {
+    background-color: gold;
+}
