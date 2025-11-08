@@ -2,16 +2,16 @@
 .benefits-section {
   padding: 16px 0;
   background-color: var(--color-brand-normal);
-}
 
-.benefits-list {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
 
-.benefits-item {
-  font-size: 20px;
-  font-weight: 300;
-  color: var(--color-primary-light);
+  &__item {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--color-primary-light);
+  }
 }
