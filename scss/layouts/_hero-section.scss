@@ -1,6 +1,8 @@
+@use '../utils/variables' as s;
+
 /* Hero section */
 .hero-section {
-  padding: 272px 0px;
+  padding: 124px 0px;
   background-image: linear-gradient(
       102.76deg,
       rgba(18, 18, 17, 0.78) 2.03%,
@@ -12,11 +14,41 @@
   background-position: center top;
   background-size: cover;
 
+  @media screen and (min-width: s.$bp-desktop) {
+    padding: 272px 0px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: dppx) {
+    background-image: linear-gradient(
+        102.76deg,
+        rgba(18, 18, 17, 0.78) 2.03%,
+        rgba(18, 18, 17, 0.6) 58.46%,
+        rgba(18, 18, 17, 0) 90.36%
+      ),
+      url(../images/hero-section-background@2x.jpg);
+  }
+
   &__title {
-    margin-bottom: 0;
+    margin-bottom: 48px;
     color: var(--color-primary-light);
     text-align: center;
-    font-size: 128px;
+    font-size: 67px;
+    line-height: 1;
     font-weight: 900;
+
+    @media screen and (min-width: s.$bp-desktop) {
+      margin-bottom: 0;
+      font-size: 128px;
+      line-height: 1.5;
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+    @media screen and (min-width: s.$bp-desktop) {
+      display: none;
+    }
   }
 }
