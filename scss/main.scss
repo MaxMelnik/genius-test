@@ -6,12 +6,13 @@
 @use './utils/mixins';
 
 @use './components/buttons';
-@use './components/links';
-@use './components/form-terms';
-@use './components/input';
-@use './components/format-card';
 @use './components/carousel-button';
 @use './components/chef-card';
+@use './components/form-terms';
+@use './components/format-card';
+@use './components/input';
+@use './components/links';
+@use './components/pagination';
 
 @use './layouts/header';
 @use './layouts/hero-section';

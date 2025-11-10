@@ -1,24 +1,48 @@
+@use '../utils/variables' as s;
+
 .chef-card {
   display: flex;
-  gap: 30px;
+  align-items: flex-start;
+  gap: 16px;
+
+  @media screen and (min-width: s.$bp-tablet) {
+    gap: 30px;
+  }
 
   &__photo {
-    border-radius: 4px 4px 4px 200px;
-    box-shadow: -16px 16px 0 0 var(--color-primary-light),
-      -16px 16px 0 2px var(--color-secondary-brown);
+    width: 140px;
+    border-radius: 2px 2px 2px 116px;
+    box-shadow: -10px 10px 0 0 var(--color-primary-light),
+      -10px 10px 0 2px var(--color-secondary-brown);
+
+    @media screen and (min-width: s.$bp-desktop) {
+      width: 240px;
+      border-radius: 4px 4px 4px 200px;
+      box-shadow: -16px 16px 0 0 var(--color-primary-light),
+        -16px 16px 0 2px var(--color-secondary-brown);
+    }
   }
 
   &__title {
     margin-bottom: 16px;
-    font-size: 40px;
+    font-size: 24px;
     font-weight: 600;
+
+    @media screen and (min-width: s.$bp-tablet) {
+      font-size: 40px;
+    }
   }
 
   &__text {
+    font-size: 14px;
     margin-bottom: 24px;
 
     &:last-child {
       margin-bottom: 0px;
+    }
+
+    @media screen and (min-width: s.$bp-tablet) {
+      font-size: 18px;
     }
   }
 }
